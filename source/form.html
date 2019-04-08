@@ -22,17 +22,11 @@
           <li class="site-list__item site-list__item--active">
             <a>Вязание на заказ</a>
           </li>
-        </ul>
-        <ul class="main-nav__list search-list">
-          <li class="search-list__item">
-            <a class="search-list__result search-list__result--icon" href="result.html">Поиск по сайту</a>
+          <li class="site-list__item site-list__item--search-icon">
+            <a href="result.html">Поиск по сайту</a>
           </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <button
-              class="user-list__shopping-cart user-list__shopping-cart--icon user-list__shopping-cart-result">Корзина:
-              пока пуста</button>
+          <li class="site-list__item site-list__item--shopping-cart-icon site-list__item--shopping-cart-result">
+            <a href="shopping-cart.html">Корзина: пока пуста</a>
           </li>
         </ul>
       </div>
@@ -47,109 +41,105 @@
       <h2 class="order__title visually-hidden">Форма заказа</h2>
       <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
         уточнить детали.</p>
-      <form class="order__form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="type">
-          <legend>тип:</legend>
-          <ul class="type__list">
-            <li class="type__item">
-              <input class="visually-hidden type__item--interior type__item--radio" type="radio" name="type__item"
-                id="mishka-interior" checked>
-              <label for="mishka-interior">Аксессуар для интерьера</label>
-            </li>
-            <li class="type__item">
-              <input class="visually-hidden type__item--interior type__item--radio" type="radio" name="type__item"
-                id="mishka-toys">
-              <label for="mishka-toys">Детская игрушка</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="color">
-          <legend>цвет:</legend>
-          <ul class="color__list">
-            <li class="color__item">
-              <input class="visually-hidden color__item--white color__item--checkbox" type="checkbox"
-                name="type_of_housing-resort" id="mishka-white" checked>
-              <label for="mishka-white">Белый</label>
-            </li>
-            <li class="color__item">
-              <input class="visually-hidden color__item--gray color__item--checkbox" type="checkbox"
-                name="type_of_housing-resort" id="mishka-gray" checked>
-              <label for="mishka-gray">Серый</label>
-            </li>
-            <li class="color__item">
-              <input class="visually-hidden color__item--tiffany color__item--checkbox" type="checkbox"
-                name="type_of_housing-resort" id="mishka-tiffany">
-              <label for="mishka-tiffany">«Тиффани»</label>
-            </li>
-            <li class="color__item">
-              <input class="visually-hidden color__item--black color__item--checkbox" type="checkbox"
-                name="type_of_housing-resort" id="mishka-black">
-              <label for="mishka-black">Черный</label>
-            </li>
-            <li class="color__item">
-              <input class="visually-hidden color__item--pink color__item--checkbox" type="checkbox"
-                name="type_of_housing-resort" id="mishka-pink">
-              <label for="mishka-pink">Розовый</label>
-            </li>
-            <li class="color__item">
-              <input class="visually-hidden color__item--orange color__item--checkbox" type="checkbox"
-                name="type_of_housing-resort" id="mishka-orange">
-              <label for="mishka-orange">Оранжевый</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-information">
-          <legend>фио:</legend>
-          <ul class="user-information__list">
-            <li class="name user-information__item">
-              <label class="name__label" for="user-name">Имя:</label>
-              <input class="name__input" id="user-name" type="text" name="your-name" value=""
-                placeholder="Введите ваше имя*" required>
-            </li>
-            <li class="surname user-information__item">
-              <label class="surname__label" for="user-surname">Фамилия:</label>
-              <input class="surname__input" id="user-surname" type="text" name="your-surname" value=""
-                placeholder="Укажите фамилию*" required>
-            </li>
-            <li class="middle-name user-information__item">
-              <label class="middle-name__input" for="user-middle-name">Отчество:</label>
-              <input class="middle-name__input" id="user-middle-name" type="text" name="your-middle-name" value=""
-                placeholder="Отчество, если желаете">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-phone">
-          <legend>тел</legend>
-          <ul class="user-phone__list">
-            <li class="mobile-phone user-phone__item">
-              <label class="mobile-phone__label visually-hidden" for="user-mobile-phone">Телефон:</label>
-              <input class="mobile-phone__input mobile-phone--image" id="user-mobile-phone" type="text"
-                name="your-mobile-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-email">
-          <legend>e-mail</legend>
-          <ul class="user-email__list">
-            <li class="home-email user-email__item">
-              <label class="home-email__label visually-hidden" for="user-home-email">Электронная почта:</label>
-              <input class="home-email__input home-email--image" id="user-home-email" type="text" name="your-home-email"
-                value="" placeholder="Ваш Email*" required>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="user-additionally">
-          <legend>доп</legend>
-          <ul class="user-additionally__list">
-            <li class="additionally-info user-additionally__item">
-              <label class="additionally-info__label visually-hidden" for="user-additionally-info">Дополнительная
-                информация по заказу:</label>
-              <input class="additionally-info__input home-email--image" id="user-additionally-info" type="text"
-                name="your-additionally-info" value="" placeholder="Опишите все ваши пожелания к заказу">
-            </li>
-          </ul>
-        </fieldset>
-        <small class="order_legend order__legend--bottom">
+      <form class="form-main order__form" method="post" action="https://echo.htmlacademy.ru">
+        <ul class="form-element">
+          <li class="form-radio form-element__item">
+            <h3 class="form-radio__title order--title">тип:</h3>
+            <fieldset class="type">
+              <legend class="visually-hidden">тип:</legend>
+              <ul class="type__list">
+                <li class="type__item">
+                  <input class="visually-hidden type__item--interior type__item--radio" type="radio" name="type__item"
+                    id="mishka-interior" checked>
+                  <label for="mishka-interior">Аксессуар для интерьера</label>
+                </li>
+                <li class="type__item">
+                  <input class="visually-hidden type__item--interior type__item--radio" type="radio" name="type__item"
+                    id="mishka-toys">
+                  <label for="mishka-toys">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="form-checkbox form-element__item">
+            <h3 class="form-checkbox__title order--title order--title-gray">цвет:</h3>
+            <fieldset class="color">
+              <legend class="visually-hidden">цвет:</legend>
+              <ul class="color__list">
+                <li class="color__item">
+                  <input class="visually-hidden color__item--white color__item--checkbox" type="checkbox"
+                    name="type_of_housing-resort" id="mishka-white" checked>
+                  <label for="mishka-white">Белый</label>
+                </li>
+                <li class="color__item">
+                  <input class="visually-hidden color__item--gray color__item--checkbox" type="checkbox"
+                    name="type_of_housing-resort" id="mishka-gray" checked>
+                  <label for="mishka-gray">Серый</label>
+                </li>
+                <li class="color__item">
+                  <input class="visually-hidden color__item--tiffany color__item--checkbox" type="checkbox"
+                    name="type_of_housing-resort" id="mishka-tiffany">
+                  <label for="mishka-tiffany">«Тиффани»</label>
+                </li>
+                <li class="color__item">
+                  <input class="visually-hidden color__item--black color__item--checkbox" type="checkbox"
+                    name="type_of_housing-resort" id="mishka-black">
+                  <label for="mishka-black">Черный</label>
+                </li>
+                <li class="color__item">
+                  <input class="visually-hidden color__item--pink color__item--checkbox" type="checkbox"
+                    name="type_of_housing-resort" id="mishka-pink">
+                  <label for="mishka-pink">Розовый</label>
+                </li>
+                <li class="color__item">
+                  <input class="visually-hidden color__item--orange color__item--checkbox" type="checkbox"
+                    name="type_of_housing-resort" id="mishka-orange">
+                  <label for="mishka-orange">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+          </li>
+          <li class="user-information form-element__item">
+            <h3 class="user-information__title order--title">фио:</h3>
+            <ul class="user-information__list">
+              <li class="name user-information__item">
+                <label class="name__label" for="user-name">Имя:</label>
+                <input class="name__input" id="user-name" type="text" name="your-name" value=""
+                  placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="name user-information__item">
+                <label class="name__label" for="user-surname">Фамилия:</label>
+                <input class="name__input" id="user-surname" type="text" name="your-surname" value=""
+                  placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="name user-information__item">
+                <label class="name__label" for="user-middle-name">Отчество:</label>
+                <input class="name__input" id="user-middle-name" type="text" name="your-middle-name" value=""
+                  placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </li>
+          <li class="user-phone form-element__item">
+            <h3 class="user-information__title order--title order--title-gray">тел</h3>
+            <label class="user-phone__label visually-hidden" for="user-mobile-phone">Телефон:</label>
+            <input class="user-phone__input mobile-phone--image" id="user-mobile-phone" type="text"
+              name="your-mobile-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </li>
+          <li class="user-email form-element__item">
+            <h3 class="user-email__title order--title order--title-gray">e-mail</h3>
+            <label class="user-email__label visually-hidden" for="user-home-email">Электронная почта:</label>
+            <input class="user-email__input home-email--image" id="user-home-email" type="text"
+              name="your-home-email" value="" placeholder="Ваш Email*" required>
+          </li>
+          <li class="user-additionally form-element__item">
+            <h3 class="user-additionally__title order--title">доп</h3>
+            <label class="user-additionally__label visually-hidden" for="user-additionally-info">Дополнительная
+              информация по заказу:</label>
+            <input class="user-additionally__input home-email--image" id="user-additionally-info" type="text"
+              name="your-additionally-info" value="" placeholder="Опишите все ваши пожелания к заказу">
+          </li>
+        </ul>
+        <small class="order__legend order__legend--bottom">
           <sup>*</sup>Поля обязательны для заполнения
         </small>
         <button class="button" type="submit">Отправить заказ</button>
