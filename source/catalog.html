@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35"
+        alt="Логотип магазина Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list search-list">
+          <li class="search-list__item">
+            <a class="search-list__result search-list__result--icon" href="result.html">Поиск по сайту</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <button
+              class="user-list__shopping-cart user-list__shopping-cart--icon user-list__shopping-cart-result">Корзина:
+              пока пуста</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="catalog-main">
+    <div class="catalog-main__wrapper">
+      <h1 class="catalog-main__title">Каталог товаров</h1>
+    </div>
+    <section class="catalog">
+      <ul class="catalog__list">
+        <li class="bunny catalog__list--item">
+          <h2 class="bunny__title visually-hidden">Игрушка Зайчик-попрыгайчик</h2>
+          <p class="bunny__picture">
+            <img class="bunny__picture--image" src="http://placehold.it/150x100" width="260" height="195"
+              alt="Фото игрушки Зайчик-попрыгайчик">
+          </p>
+          <a class="bunny__product-name" href="catalog/Bunny-Jumping.html">Зайчик-попрыгайчик</a>
+          <p class="bunny__description">Рост 30 см, вес 200 г</p>
+          <div class="bunny__wrapper">
+            <span class="bunny__cost">1 200 руб.</span>
+            <a class="bunny__shopping-cart" href="#">
+              <img class="bunny__shopping-cart--image" src="http://placehold.it/150x100" width="20" height="19"
+                alt="Корзина">
+            </a>
+          </div>
+        </li>
+        <li class="laundry-basket catalog__list--item">
+          <h2 class=" laundry-basket__title visually-hidden">Корзинка для белья</h2>
+          <p class="laundry-basket__picture">
+            <img class="laundry-basket__picture--image" src="http://placehold.it/150x100" width="260" height="195"
+              alt="Фото корзинки для белья">
+          </p>
+          <a class="laundry-basket__product-name" href="catalog/laundry-basket.html">Корзинка для белья</a>
+          <p class="laundry-basket__description">Диаметр 15 см, высота 10 см</p>
+          <div class="laundry-basket__wrapper">
+            <span class="laundry-basket__cost">690 руб.</span>
+            <a class="laundry-basket__shopping-cart" href="#">
+              <img class="laundry-basket__shopping-cart--image" src="http://placehold.it/150x100" width="20" height="19"
+                alt="Корзина">
+            </a>
+          </div>
+        </li>
+        <li class="basket-for-toys catalog__list--item">
+          <h2 class=" basket-for-toys__title visually-hidden">Большая корзинка для игрушек</h2>
+          <p class="basket-for-toys__picture">
+            <img class="basket-for-toys__picture--image" src="http://placehold.it/150x100" width="260" height="195"
+              alt="Фото большой корзинки для игрушек">
+          </p>
+          <a class="basket-for-toys__product-name" href="catalog/basket-for-toys.html">Большая корзинка для игрушек</a>
+          <p class="basket-for-toys__description">Диаметр 30 см, высота 30 см</p>
+          <div class="basket-for-toys__wrapper">
+            <span class="basket-for-toys__cost">1 500 руб.</span>
+            <a class="basket-for-toys__shopping-cart" href="#">
+              <img class="basket-for-toys__shopping-cart--image" src="http://placehold.it/150x100" width="20"
+                height="19" alt="Корзина">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="production">
+      <h2 class="production__title production__title--image">Процесс производства</h2>
+      <video class="production__video" src="#" poster="http://placehold.it/150x100" width="260" height="150"
+        preload="metadata" aria-label="Видео о процессе производства товаров"></video>
+      <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
+      <a class="production__order button" href="form.html">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35"
+          alt="Логотип магазина Мишка">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35"
+            alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
