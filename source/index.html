@@ -1,12 +1,208 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35"
+        alt="Логотип магазина Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item site-list__item--search-icon">
+            <a href="result.html">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item site-list__item--shopping-cart-icon site-list__item--shopping-cart-result">
+            <a href="shopping-cart.html">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Магазин вязанных товаров Мишка</h1>
+    <section class="description">
+      <h2 class="visually-hidden">Описание магазина Мишка</h2>
+      <p class="title-page description__text">Милые штуки ручной работы для дома</p>
+      <p class="description__picture">
+        <img class="description__picture--image" src="http://placehold.it/150x100" width="283" height="373"
+          alt="Фотография с товарами магазина Мишка">
+      </p>
+    </section>
+    <section class="store-assortment">
+      <h2 class="visually-hidden">Ассортимент магазина</h2>
+      <ul class="assortment-list">
+        <li class="assortment-menu assortment-menu--interior">
+          <a href="assortment-interior.html">Предметы интерьера</a>
+        </li>
+        <li class="assortment-menu assortment-menu--toys">
+          <a href="assortment-toys.html">Детские игрушки</a>
+        </li>
+      </ul>
+    </section>
+    <section class="product-of-the-week">
+      <h2 class="product-of-the-week__title">Товар недели</h2>
+      <h3 class="title-page product-of-the-week__title-product">Вязаные корзинки</h3>
+      <p class="product-of-the-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
+        и трех размерах.</p>
+      <table class="product-of-the-week__list">
+        <tr>
+          <td class="product-of-the-week__value">Цвет:</td>
+          <td class="product-of-the-week__field">«Тиффани»/серый</td>
+        </tr>
+        <tr>
+          <td class="product-of-the-week__value">Диаметр:</td>
+          <td class="product-of-the-week__field">25 см</td>
+        </tr>
+        <tr>
+          <td class="product-of-the-week__value">Высота:</td>
+          <td class="product-of-the-week__field">15 см</td>
+        </tr>
+      </table>
+      <p class="product-of-the-week__picture">
+        <img class="product-of-the-week__picture--image" src="http://placehold.it/150x100" width="260" height="315"
+          alt="Фотография вязанных корзинок">
+      </p>
+      <p class="product-of-the-week__cost">Цена: 990 руб.</p>
+      <a class="product-of-the-week__order button" href="form-order.html">Заказать</a>
+
+      <form class="form-order">
+        <p class="form-order__title">Добавить в корзину</p>
+        <fieldset class="form-order__choice">
+          <legend>Выберите размер:</legend>
+          <ul class="form-order-list">
+            <li class="form-order-list__item">
+              <input class="visually-hidden form-order-list__input form-order-list__input--active" type="radio"
+                name="size" id="size-s" checked>
+              <label for="size-s">S</label>
+            </li>
+            <li class="form-order-list__item">
+              <input class="visually-hidden form-order-list__input" type="radio" name="size" id="size-m">
+              <label for="size-m">M</label>
+            </li>
+            <li class="form-order-list__item">
+              <input class="visually-hidden form-order-list__input" type="radio" name="size" id="size-l">
+              <label for="size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="form-order__add button">Добавить</button>
+      </form>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="title-page advantages__title">Коротко о нас:</p>
+      <ul class="advantages__list">
+        <li class="advantage advantage--ecologically-friendly">
+          <p class="advantage__description">Экологически чистые материалы</p>
+        </li>
+        <li class="advantage advantage--profitable">
+          <p class="advantage__description">Скандинавский стиль по российской цене</p>
+        </li>
+        <li class="advantage advantage--confession">
+          <p class="advantage__description">Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="advantage advantage--care">
+          <p class="advantage__description">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="advantage advantage--patriotism">
+          <p class="advantage__description">Поддержка отечественного производителя</p>
+        </li>
+        <li class="advantage advantage--packaging">
+          <p class="advantage__description">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="title-page reviews__title">Отзывы</h2>
+        <p class="reviews__picture">
+          <img class="reviews__picture--image" src="http://placehold.it/150x100" width="150" height="100"
+            alt="Фотография вязанной салфетки">
+        </p>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+              фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <cite class="reviews__author-email">@misssssiskras</cite>
+          </blockquote>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+        </div>
+        <a class="reviews__write button" href="#">Написать</a>
+      </div>
+    </section>
+    <section class="page-contacts">
+      <div class="page-contacts__contacts contacts">
+        <h2 class="title-page contacts__title contacts__title--image">Контакты</h2>
+        <p class="contacts__title-text">e-mail:</p>
+        <p class="contacts__text">
+          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
+            <span class="contacts__contact-email">info@mimimishkashop.ru</span>
+          </a>
+        </p>
+        <p class="contacts__title-text">адрес:</p>
+        <p class="contacts__text contacts__contact-adress">
+          г. Санкт-Петербург,<br>
+          ул. Большая Конюшенная,<br>
+          д. 19/8, офис 101
+        </p>
+      </div>
+      <div class="modal">
+        <h2 class="visually-hidden">Карта проезда к магазину Мишка</h2>
+        <iframe src="http://placehold.it/150x100" width="320" height="457">
+        </iframe>
+        <a class="contacts__write button" href="#">Напишите нам</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35"
+          alt="Логотип магазина Мишка">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35"
+            alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
