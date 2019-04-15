@@ -1,11 +1,11 @@
 .production {
-margin-left: 30px;
-margin-right: 30px;
-margin-bottom: 58px;
-display: flex;
-flex-wrap: wrap;
-width: 260px;
-border: 1px solid hsl(0, 0, 93%);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  border: 1px solid hsl(0, 0, 93%);
 }
 
 .production__title {
@@ -19,7 +19,7 @@ border: 1px solid hsl(0, 0, 93%);
 }
 
 .production__title--image {
-    &::before {
+  &::before {
     content: "";
     position: absolute;
     display: block;

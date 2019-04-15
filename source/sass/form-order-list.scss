@@ -13,7 +13,7 @@
   width: 82px;
 }
 
-.form-order-list__item--active {}
+// .form-order-list__item--active {}
 
 .form-order-list__label {
   display: flex;
@@ -33,10 +33,11 @@
   &:focus + label {
     border: 2px solid rgba(27, 27, 27, 0.3);
   }
+
   &:active + label,
   &:checked + label {
-  border: 2px solid rgba(98, 209, 186, 1);
+    border: 2px solid rgba(98, 209, 186, 1);
   }
 }
 
-.form-order-list__input--active {}
+// .form-order-list__input--active {}

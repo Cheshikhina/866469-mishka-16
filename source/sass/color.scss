@@ -47,12 +47,13 @@
   &:focus + label::before {
     border: 2px solid hsl(168, 55%, 60%);
   }
+
   &:active + label::before {
     border: 2px solid hsl(0, 0%, 78%);
   }
 }
 
-.color__item--color{
+.color__item--color {
   & + label {
     position: relative;
     display: block;
@@ -64,6 +65,7 @@
   &:focus + label {
     color: lighten($color, 40%);
   }
+
   &:active + label {
     color: lighten($color, 70%);
   }

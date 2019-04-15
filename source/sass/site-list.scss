@@ -5,7 +5,7 @@ $color: hsl(0, 0, 0);
   padding: 0;
   margin: 0;
   font-weight: 700;
-  display: block
+  display: block;
 }
 
 .site-list__item {
@@ -18,9 +18,9 @@ $color: hsl(0, 0, 0);
   border-bottom: 1px solid hsl(0, 0, 93%);
 
   &:first-child {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 116px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 116px;
   }
 }
 
@@ -36,8 +36,8 @@ $color: hsl(0, 0, 0);
   background-position: 0 0;
 }
 
-.site-list__item--icon-search {}
+// .site-list__item--icon-search {}
 
-.site-list__item--icon-shopping-cart {}
+// .site-list__item--icon-shopping-cart {}
 
-.site-list__item--shopping-cart-result {}
+// .site-list__item--shopping-cart-result {}

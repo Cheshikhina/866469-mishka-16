@@ -14,7 +14,7 @@
   margin-bottom: 30px;
 }
 
-.order__form {}
+// .order__form {}
 
 .order--title {
   color: hsl(168, 54%, 60%);
@@ -24,7 +24,7 @@
   display: flex;
   margin: 0;
 
-  &:after {
+  &::after {
     content: "";
     background-color: hsl(168, 54%, 60%);
     width: 198px;
@@ -41,9 +41,7 @@
   line-height: 16px;
 }
 
-.order__legend--bottom {
-
-}
+// .order__legend--bottom {}
 
 .order__button {
   margin-top: 31px;

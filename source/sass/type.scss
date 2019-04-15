@@ -14,7 +14,6 @@
   padding-left: 62px;
   padding-bottom: 14px;
   font-weight: 700;
-
 }
 
 .type__item--interior {
@@ -29,6 +28,7 @@
   &:focus + label {
     color: lighten($color, 40%);
   }
+
   &:active + label {
     color: lighten($color, 70%);
   }
@@ -61,6 +61,7 @@
   &:focus + label::before {
     border: 2px solid hsl(168, 55%, 60%);
   }
+
   &:active + label::before {
     border: 2px solid hsl(0, 0%, 78%);
   }
