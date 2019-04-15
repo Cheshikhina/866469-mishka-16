@@ -1,0 +1,88 @@
+.advantage {
+  display: inline-block;
+}
+
+.advantage__description {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-right: 55px;
+}
+
+.advantage--ecologically-friendly {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+.advantage--profitable {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/icon-feature-money.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+.advantage--confession {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/icon-feature-heart.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+.advantage--care {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/icon-feature-ball.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+.advantage--patriotism {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+.advantage--packaging {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-image: url("../img/icon-feature-gift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}

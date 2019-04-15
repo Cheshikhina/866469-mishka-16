@@ -1,0 +1,42 @@
+$greyish-brown: hsl(0, 0, 27%);
+
+.form-order {
+  margin: 0;
+  margin-bottom: 30px;
+  display: block;
+  width: 320px;
+}
+
+.form-order__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.form-order__choice {
+  border: none;
+  color: $greyish-brown;
+  text-align: center;
+  padding: 0;
+}
+
+.form-order__add {
+  line-height: 16px;
+  background-color: hsl(168, 55%, 60%);
+  color: hsl(0, 0%, 100%);
+  margin: auto;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: darken(hsl(168, 55%, 60%), 5%);
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: darken(hsl(168, 55%, 60%), 15%);
+  }
+}

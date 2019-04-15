@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  // font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/opensans.woff) format('woff'),
+            ('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/opensans.woff2) format('woff2');
+}
+
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url(../fonts/opensansbold.woff) format('woff'),
+//        url(../fonts/opensansbold.woff2) format('woff2');
+//  }
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  min-width: 320px;
+}
+
+a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+input::-webkit-input-placeholder { color: hsl(0, 0%, 78%); }
+input:-ms-input-placeholder { color: hsl(0, 0%, 78%); }
+input::-ms-input-placeholder { color: hsl(0, 0%, 78%); }
+input:placeholder { color: hsl(0, 0%, 78%); }
+
+input:focus::-webkit-input-placeholder { opacity: 0; }
+input:focus:-ms-input-placeholder { opacity: 0; }
+input:focus::-ms-input-placeholder { opacity: 0; }
+input:focus:placeholder { opacity: 0; }
+
+textarea::-webkit-input-placeholder { color: hsl(0, 0%, 78%); }
+textarea:-ms-input-placeholder { color: hsl(0, 0%, 78%); }
+textarea::-ms-input-placeholder { color: hsl(0, 0%, 78%); }
+textarea:placeholder { color: hsl(0, 0%, 78%); }
+
+textarea:focus::-webkit-input-placeholder { opacity: 0; }
+textarea:focus:-ms-input-placeholder { opacity: 0; }
+textarea:focus::-ms-input-placeholder { opacity: 0; }
+textarea:focus:placeholder { opacity: 0; }

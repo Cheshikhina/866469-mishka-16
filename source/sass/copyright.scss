@@ -1,0 +1,19 @@
+.copyright {}
+
+.copyright__link {
+  display: flex;
+
+  &:active {
+    color: lighten($color, 70%);
+  }
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 34px;
+  margin-left: 39px;
+}
+
+.copyright__link--icon {
+  margin-left: 30px;
+}

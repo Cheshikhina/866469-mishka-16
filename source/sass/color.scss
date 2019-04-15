@@ -1,0 +1,70 @@
+.color {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.color__list {
+  list-style: none;
+  padding: 0;
+}
+
+.color__item {
+  padding-left: 62px;
+  padding-bottom: 46px;
+  font-weight: 700;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.color__item--checkbox {
+  & + label::before {
+    content: "";
+    position: absolute;
+    left: -62px;
+    top: -5px;
+    width: 40px;
+    height: 39px;
+    border: 2px solid hsl(0, 0%, 27%);
+  }
+
+  &:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -53px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-position: -3px -7px;
+    background-repeat: no-repeat;
+  }
+
+  &:hover + label::before,
+  &:focus + label::before {
+    border: 2px solid hsl(168, 55%, 60%);
+  }
+  &:active + label::before {
+    border: 2px solid hsl(0, 0%, 78%);
+  }
+}
+
+.color__item--color{
+  & + label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &:hover + label,
+  &:focus + label {
+    color: lighten($color, 40%);
+  }
+  &:active + label {
+    color: lighten($color, 70%);
+  }
+}
