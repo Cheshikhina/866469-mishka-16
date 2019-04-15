@@ -1,5 +1,4 @@
 $color: hsl(0, 0%, 0%);
-$color-greeny-blue: hsl(171, 50%, 52%);
 
 .link {
   &:hover,
@@ -31,25 +30,6 @@ $color-greeny-blue: hsl(171, 50%, 52%);
   &:active polygon,
   &:active rect {
     fill: $color;
-    opacity: 0.3;
-  }
-}
-
-.link--icon-interaction {
-  &:hover path,
-  &:hover polygon,
-  &:hover rect,
-  &:focus path,
-  &:focus polygon,
-  &:focus rect {
-    fill: $color-greeny-blue;
-    opacity: 1;
-  }
-
-  &:active path,
-  &:active polygon,
-  &:active rect {
-    fill: $color-greeny-blue;
     opacity: 0.3;
   }
 }
