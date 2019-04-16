@@ -1,0 +1,64 @@
+$color: hsl(0, 0%, 0%);
+
+.link {
+  &:hover,
+  &:focus {
+    color: lighten($color, 40%);
+  }
+
+  &:active {
+    color: lighten($color, 70%);
+  }
+}
+
+.link--active {
+  color: lighten($color, 70%);
+}
+
+.link--icon {
+  &:hover path,
+  &:hover polygon,
+  &:hover rect,
+  &:focus path,
+  &:focus polygon,
+  &:focus rect {
+    fill: $color;
+    opacity: 0.6;
+  }
+
+  &:active path,
+  &:active polygon,
+  &:active rect {
+    fill: $color;
+    opacity: 0.3;
+  }
+}
+
+.link--shadow {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.link--input {
+  &:hover,
+  &:focus,
+  &:active {
+    border-bottom: 2px solid hsl(168, 55%, 60%);
+    box-shadow: none;
+  }
+}
+
+.link--texarea {
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid hsl(168, 55%, 60%);
+    box-shadow: none;
+  }
+}

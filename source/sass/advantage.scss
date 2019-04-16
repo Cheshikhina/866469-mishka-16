@@ -1,0 +1,58 @@
+.advantage {
+  display: inline-block;
+}
+
+.advantage__description {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-right: 55px;
+}
+
+.advantage__icon {
+  &::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 37px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+}
+
+.advantage__icon--ecologically-friendly {
+  &::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+}
+
+.advantage__icon--profitable {
+  &::before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+}
+
+.advantage__icon--confession {
+  &::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+}
+
+.advantage__icon--care {
+  &::before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+}
+
+.advantage__icon--patriotism {
+  &::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+}
+
+.advantage__icon--packaging {
+  &::before {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}

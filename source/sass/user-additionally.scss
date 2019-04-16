@@ -1,0 +1,17 @@
+// .user-additionally {}
+
+.user-additionally__title {
+  margin-bottom: 23px;
+}
+
+// .user-additionally__label {}
+
+.user-additionally__input {
+  width: 260px;
+  border: 2px solid hsl(0, 0, 27%);
+  box-shadow: inset 0 -2px 0 0;
+  padding: 18px;
+  outline: none;
+  color: hsl(0, 0, 27%);
+  font-size: 19px;
+}

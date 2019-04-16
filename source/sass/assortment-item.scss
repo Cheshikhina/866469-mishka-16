@@ -1,0 +1,73 @@
+.assortment-item {
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    transform: scaleY(5px);
+    transition-duration: 0.3s;
+    padding-bottom: 5px;
+    outline: none;
+  }
+}
+
+.assortment-item--interior {
+  background-color: hsl(168, 54%, 60%);
+
+  &:hover,
+  &:focus {
+    background-color: hsl(168, 60%, 59%);
+  }
+
+  &:active {
+    background-color: hsl(168, 60%, 59%);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.assortment-item--toys {
+  background-color: hsl(171, 48%, 55%);
+
+  &:hover,
+  &:focus {
+    background-color: hsl(171, 50%, 52%);
+  }
+
+  &:active {
+    background-color: hsl(171, 50%, 52%);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.assortment-item__link {
+  display: flex;
+  color: hsl(0, 0, 100%);
+}
+
+.assortment-item__link--text {
+  margin: 0;
+  padding: 30px;
+  width: 160px;
+}
+
+.assortment-item__link--icon {
+  padding: 0;
+  margin: auto;
+  margin-right: 27px;
+  width: 60px;
+  height: 63px;
+}
+
+.assortment-item__link--icon-image {
+  & path {
+    fill: hsla(172, 77%, 32%, 0.5);
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: hsla(172, 77%, 32%, 0.7);
+  }
+
+  &:active path {
+    fill: hsla(172, 77%, 32%, 0.3);
+  }
+}

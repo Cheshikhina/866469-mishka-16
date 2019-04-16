@@ -1,0 +1,11 @@
+.zigzag-line {
+  &::after {
+    content: "";
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: cover;
+    display: block;
+    width: 320px;
+    height: 6px;
+    margin-top: 36px;
+  }
+}
