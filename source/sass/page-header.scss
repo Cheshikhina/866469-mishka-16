@@ -5,7 +5,20 @@
 }
 
 .page-header__logo {
-  display: block;
   width: 86px;
   height: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    width: 149px;
+    height: 72px;
+  }
 }

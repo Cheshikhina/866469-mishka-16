@@ -1,3 +1,15 @@
 .page-main {
   margin-bottom: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    margin-top: -85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    margin-top: -75px;
+  }
+}

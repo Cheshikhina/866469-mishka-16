@@ -71,3 +71,28 @@
     fill: hsla(172, 77%, 32%, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .assortment-item__link--text {
+    min-width: 240px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 35px;
+    padding-left: 36px;
+    padding-bottom: 34px;
+  }
+
+  .assortment-item__link--icon {
+    margin: auto;
+    margin-right: 35px;
+  }
+
+  .assortment-item {
+    &:hover,
+    &:focus {
+      transform: none;
+      padding-bottom: 0;
+    }
+  }
+}
