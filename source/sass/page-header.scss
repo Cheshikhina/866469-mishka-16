@@ -5,7 +5,25 @@
 }
 
 .page-header__logo {
-  display: block;
+  margin: auto;
   width: 86px;
   height: 35px;
+  // для размеров
+  background-color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    margin: 0;
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin: auto;
+    width: 149px;
+    height: 72px;
+  }
 }

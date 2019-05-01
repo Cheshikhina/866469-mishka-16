@@ -1,13 +1,15 @@
 .advantage {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 251px;
 }
 
 .advantage__description {
   margin: 0;
   margin-bottom: 30px;
+  padding-left: 2px;
   font-weight: 700;
   line-height: 20px;
-  padding-right: 55px;
 }
 
 .advantage__icon {
@@ -17,42 +19,110 @@
     width: 55px;
     height: 37px;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 
 .advantage__icon--ecologically-friendly {
   &::before {
     background-image: url("../img/icon-feature-flower.svg");
+    background-position: 40% 0;
   }
 }
 
 .advantage__icon--profitable {
   &::before {
     background-image: url("../img/icon-feature-money.svg");
+    background-position: 20% 0;
   }
 }
 
 .advantage__icon--confession {
   &::before {
     background-image: url("../img/icon-feature-heart.svg");
+    background-position: 40% 60%;
   }
 }
 
 .advantage__icon--care {
   &::before {
     background-image: url("../img/icon-feature-ball.svg");
+    background-position: 25% 90%;
   }
 }
 
 .advantage__icon--patriotism {
   &::before {
     background-image: url("../img/icon-feature-rocket.svg");
+    background-position: 0% 30%;
   }
 }
 
 .advantage__icon--packaging {
   &::before {
     background-image: url("../img/icon-feature-gift.svg");
+    background-position: 20% 60%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    max-width: 295px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+      margin-left: 5.8%;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+      margin-left: 5.8%;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      margin-left: 5.8%;
+    }
+  }
+
+  .advantage__description {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 57px;
+  }
+
+  .advantage__icon {
+    margin-left: 3px;
+
+    &::before {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage {
+    &:nth-child(4) {
+      order: 2;
+      margin-left: 6.6%;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+      margin-left: 6.6%;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      margin-left: 6.6%;
+    }
   }
 }

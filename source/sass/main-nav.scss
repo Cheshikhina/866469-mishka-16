@@ -1,18 +1,40 @@
 .main-nav {
   position: relative;
+  max-width: 320px;
 }
 
 .main-nav__toggle {
   position: absolute;
   border: none;
   background-color: transparent;
-  display: block;
+  display: none;
   width: 21px;
   height: 21px;
-  right: 30px;
+  right: 10%;
   top: 30px;
 }
 
-// .main-nav__wrapper {}
+// .main-nav__box {}
 
 // .main-nav__list {}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .main-nav__box {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    max-width: 100%;
+  }
+
+  .main-nav__box {
+    min-width: $desktop-width;
+  }
+}

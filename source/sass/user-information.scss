@@ -1,9 +1,9 @@
 .user-information {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .user-information__title {
-  margin-bottom: 33px;
+  margin-bottom: 26px;
 }
 
 .user-information__list {
@@ -12,3 +12,24 @@
 }
 
 // .user-information__item {}
+
+@media (min-width: $tablet-width) {
+  .user-information {
+    margin-bottom: 27px;
+  }
+
+  .user-information__title {
+    margin-top: 18px;
+  }
+
+  .user-information__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-information__title {
+    padding-left: 6px;
+  }
+}

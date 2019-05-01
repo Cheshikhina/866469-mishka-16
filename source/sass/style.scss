@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "./common";
+@import "./variables";
 @import "./page-header";
 @import "./main-nav";
 @import "./button";
@@ -9,7 +10,6 @@
 @import "./page-main";
 @import "./visually-hidden";
 @import "./description";
-@import "./title-page";
 @import "./store-assortment";
 @import "./assortment-item";
 @import "./product-of-the-week";
@@ -43,3 +43,5 @@
 @import "./user-phone";
 @import "./user-email";
 @import "./user-additionally";
+@import "./container";
+@import "./auxiliary-list";

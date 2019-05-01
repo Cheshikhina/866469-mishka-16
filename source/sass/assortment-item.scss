@@ -44,9 +44,13 @@
 }
 
 .assortment-item__link--text {
+  font-size: 19px;
   margin: 0;
-  padding: 30px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-left: 29px;
   width: 160px;
+  letter-spacing: normal;
 }
 
 .assortment-item__link--icon {
@@ -55,6 +59,10 @@
   margin-right: 27px;
   width: 60px;
   height: 63px;
+}
+
+.assortment-item__link--icon-interior {
+  margin-top: 23px;
 }
 
 .assortment-item__link--icon-image {
@@ -69,5 +77,34 @@
 
   &:active path {
     fill: hsla(172, 77%, 32%, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .assortment-item__link--text {
+    min-width: 240px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 36px;
+    padding-top: 27px;
+    padding-bottom: 33px;
+  }
+
+  .assortment-item__link--icon {
+    margin: auto;
+    margin-right: 35px;
+  }
+
+  .assortment-item__link--icon-interior {
+    margin-right: 27px;
+  }
+
+  .assortment-item {
+    &:hover,
+    &:focus {
+      transform: none;
+      padding-bottom: 0;
+    }
   }
 }

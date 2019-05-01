@@ -2,10 +2,30 @@
   &::after {
     content: "";
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: cover;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
     display: block;
-    width: 320px;
     height: 6px;
     margin-top: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .zigzag-line {
+    &::after {
+      background-size: auto 15px;
+      height: 15px;
+      margin-top: 53px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag-line {
+    &::after {
+      background-size: auto 23px;
+      height: 23px;
+      margin-top: 73px;
+    }
   }
 }

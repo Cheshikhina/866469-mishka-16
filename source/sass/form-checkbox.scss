@@ -1,5 +1,23 @@
 // .form-checkbox {}
 
 .form-checkbox__title {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox {
+    margin-bottom: 50px;
+  }
+
+  .form-checkbox__title {
+    margin-top: 67px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-checkbox__title {
+    padding-left: 5px;
+    margin-bottom: 11px;
+  }
 }

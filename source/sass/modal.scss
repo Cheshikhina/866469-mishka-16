@@ -1,3 +1,30 @@
 .modal {
-  margin-bottom: 39px;
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 100%;
+    margin-bottom: 49px;
+  }
+
+  .modal--map {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .modal {
+    order: 2;
+    width: 525px;
+    margin-bottom: 0;
+    margin-right: 51px;
+    margin-left: auto;
+    margin-top: -35.2%;
+  }
+
+  .modal--map {
+    width: 525px;
+  }
 }

@@ -1,5 +1,23 @@
-// .catalog {}
+.catalog {
+  margin: 0 30px;
+  margin-top: 30px;
+}
 
 // .catalog__list {}
 
 // .catalog__list--item {}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin: 0 52px;
+    margin-top: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin: 0;
+    margin-bottom: 57px;
+    margin-top: 112px;
+  }
+}
