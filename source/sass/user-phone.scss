@@ -1,25 +1,28 @@
 .user-phone {
-  margin-bottom: 34px;
-  position: relative;
+  margin-bottom: 32px;
 }
 
 .user-phone__title {
   margin-bottom: 9px;
 }
 
+.user-phone__content {
+  display: flex;
+  position: relative;
+}
+
 // .user-phone__label {}
 
 .user-phone__input {
   display: block;
-  width: 260px;
+  width: 100%;
+  min-height: 50px;
+  font-size: 19px;
   outline: none;
   border: none;
-  min-height: 52px;
-  margin-bottom: 24px;
   border-bottom: 2px solid hsl(0, 0%, 0%);
   box-shadow: inset 0 -2px 0 0;
   color: hsl(0, 0, 27%);
-  font-size: 19px;
 }
 
 .user-phone--image {
@@ -34,5 +37,51 @@
   &:focus path,
   &:active path {
     fill: hsl(168, 55%, 60%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-phone {
+    margin-bottom: 0;
+  }
+
+  .user-phone__title {
+    margin-top: 67px;
+  }
+
+  .user-phone__content {
+    width: 100%;
+    margin-top: 51px;
+    padding-left: 40px;
+  }
+
+  .user-phone__input {
+    width: 91%;
+    background-color: hsl(0, 0, 95%);
+    padding-left: 17px;
+  }
+
+  .user-phone--image {
+    right: 13%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-phone__title {
+    padding-left: 7px;
+  }
+
+  .user-phone__content {
+    width: 825px;
+    padding-left: 4px;
+    margin-right: auto;
+  }
+
+  .user-phone__input {
+    width: 85.4%;
+  }
+
+  .user-phone--image {
+    right: 128px;
   }
 }

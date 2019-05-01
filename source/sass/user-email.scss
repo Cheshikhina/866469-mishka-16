@@ -1,25 +1,29 @@
 .user-email {
-  margin-bottom: 34px;
-  position: relative;
+  margin-bottom: 33px;
 }
 
 .user-email__title {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 // .user-email__label {}
 
+.user-email__content {
+  display: flex;
+  position: relative;
+}
+
 .user-email__input {
   display: block;
-  width: 260px;
+  width: 100%;
+  min-height: 50px;
+  font-size: 17px;
+  line-height: 18px;
   outline: none;
   border: none;
-  min-height: 52px;
-  margin-bottom: 24px;
   border-bottom: 2px solid hsl(0, 0%, 0%);
   box-shadow: inset 0 -2px 0 0;
   color: hsl(0, 0, 27%);
-  font-size: 19px;
 
   &:hover,
   &:focus,
@@ -34,12 +38,65 @@
   width: 32px;
   height: 21px;
   position: absolute;
-  right: 8px;
-  bottom: 19px;
+  right: 4px;
+  bottom: 18px;
 
   &:hover path,
   &:focus path,
   &:active path {
     fill: hsl(168, 55%, 60%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-email {
+    margin-bottom: 50px;
+  }
+
+  .user-email__title {
+    margin-top: 26px;
+    margin-bottom: 51px;
+    padding-top: 16px;
+    padding-left: 1px;
+  }
+
+  .user-email__content {
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 51px;
+    padding-left: 40px;
+  }
+
+  .user-email__input {
+    width: 91%;
+    font-size: 19px;
+    background-color: hsl(0, 0, 95%);
+    padding-left: 17px;
+  }
+
+  .user-email--image {
+    right: 12.2%;
+    bottom: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-email__title {
+    padding-top: 17px;
+    padding-left: 6px;
+  }
+
+  .user-email__content {
+    width: 825px;
+    padding-left: 4px;
+    margin-right: auto;
+  }
+
+  .user-email__input {
+    width: 85.4%;
+  }
+
+  .user-email--image {
+    right: 124px;
   }
 }

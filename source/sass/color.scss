@@ -2,7 +2,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 1px;
 }
 
 .color__list {
@@ -11,9 +11,10 @@
 }
 
 .color__item {
-  padding-left: 62px;
-  padding-bottom: 46px;
   font-weight: 700;
+  line-height: 18px;
+  padding-left: 62px;
+  margin-bottom: 43px;
 
   &:last-child {
     padding-bottom: 0;
@@ -25,7 +26,7 @@
     content: "";
     position: absolute;
     left: -62px;
-    top: -5px;
+    top: -10px;
     width: 40px;
     height: 39px;
     border: 2px solid hsl(0, 0%, 27%);
@@ -34,7 +35,7 @@
   &:checked + label::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 2px;
     left: -53px;
     width: 22px;
     height: 16px;
@@ -68,5 +69,73 @@
 
   &:active + label {
     color: lighten($color, 70%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .color {
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+    margin-top: 65px;
+    margin-bottom: 11px;
+  }
+
+  .color__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .color__item {
+    width: 250px;
+    font-size: 19px;
+    padding-left: 81px;
+    margin-bottom: 58px;
+
+    &:nth-child(2n) {
+      padding-left: 92px;
+    }
+  }
+
+  .color__item--checkbox {
+    & + label::before {
+      left: -80px;
+      top: -15px;
+      width: 54px;
+      height: 52px;
+    }
+
+    &:checked + label::after {
+      top: -1px;
+      left: -67px;
+      width: 33px;
+      height: 30px;
+      background-position: -2px 1px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color {
+    max-width: 825px;
+  }
+
+  .color__item {
+    width: 275px;
+    padding-left: 85px;
+    margin-bottom: 58px;
+
+    &:nth-child(2n) {
+      padding-left: 85px;
+    }
+
+    &:nth-child(3n-1) {
+      padding-left: 72px;
+    }
+
+    &:nth-child(3n) {
+      padding-left: 62px;
+    }
   }
 }

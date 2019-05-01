@@ -8,8 +8,7 @@
 .auxiliary-list__item {
   font-weight: 700;
   font-size: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
 }
 
 .auxiliary-list__item--delivery {
@@ -31,9 +30,9 @@
 
   .auxiliary-list__item--delivery {
     display: flex;
-    padding-top: 25px;
+    padding-top: 30px;
     margin-top: -84px;
-    margin-right: 52px;
+    margin-right: 50px;
     z-index: 2;
   }
 }
@@ -45,23 +44,25 @@
   }
 
   .auxiliary-list__item {
+    padding: 17px 0;
     display: flex;
     flex-wrap: wrap;
+    letter-spacing: 0.1px;
   }
 
   .auxiliary-list__item--new {
     margin-left: 50px;
-    margin-right: 24px;
+    margin-right: 27px;
   }
 
   .auxiliary-list__item--sale {
-    margin-left: 35px;
+    margin-left: 33px;
   }
 
   .auxiliary-list__item--delivery {
-    padding-top: 25px;
+    padding-top: 17px;
     margin-top: 0;
-    margin-right: 52px;
+    margin-right: 49px;
     margin-left: auto;
   }
 }

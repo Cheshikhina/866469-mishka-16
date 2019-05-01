@@ -1,50 +1,102 @@
 .order {
-  width: 260px;
+  width: 100%;
   display: flex;
-  margin: auto;
   flex-wrap: wrap;
+  margin: 0;
+  margin-top: 23px;
   margin-bottom: 55px;
 }
 
 .order__text {
+  width: 81%;
   color: hsl(0, 0%, 27%);
   font-size: 13px;
-  margin: 0;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 23px;
 }
 
-// .order__form {}
+.order__form {
+  margin: 0 auto;
+}
 
-.order--title {
-  color: hsl(168, 54%, 60%);
-  text-transform: uppercase;
-  font-size: 17px;
-  // line-height: 16px;
+.order__form--wrapper {
   display: flex;
-  margin: 0;
-
-  &::after {
-    content: "";
-    background-color: hsl(168, 54%, 60%);
-    width: 198px;
-    height: 1px;
-    display: flex;
-    margin: auto;
-    margin-right: 0;
-  }
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
 }
 
-.order__legend {
+.order__form--legend {
   color: hsl(0, 0%, 27%);
   font-size: 14px;
   line-height: 16px;
 }
 
-// .order__legend--bottom {}
-
-.order__button {
+.order__form--button {
   margin-top: 31px;
   background-color: hsl(0, 0%, 100%);
   outline: none;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    margin: 0 auto;
+    margin-top: 62px;
+    margin-bottom: 55px;
+  }
+
+  .order__text {
+    font-size: 17px;
+    line-height: 30px;
+    width: 88.7%;
+    padding-left: 6px;
+    padding-right: 50px;
+    margin-bottom: 73px;
+  }
+
+  .order__form--wrapper {
+    width: 87%;
+  }
+
+  .order__form--legend {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 8px;
+    margin: 0 auto;
+    margin-right: 0;
+  }
+
+  .order__form--button {
+    width: 230px;
+    margin: 0 auto;
+    margin-left: 0;
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    margin-top: 104px;
+    margin-bottom: 50px;
+  }
+
+  .order__form--wrapper {
+    width: 825px;
+  }
+
+  .order__text {
+    width: 780px;
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
+  .order__form--legend {
+    padding-top: 10px;
+    margin-right: 61px;
+  }
+
+  .order__form--button {
+    margin-left: 62px;
+  }
 }

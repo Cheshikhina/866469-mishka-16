@@ -1,5 +1,23 @@
-// .form-radio {}
+.form-radio {
+  margin-bottom: 21px;
+}
 
 .form-radio__title {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-radio {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-radio {
+    margin-bottom: 9px;
+  }
+
+  .form-radio__title {
+    padding-left: 9px;
+  }
 }

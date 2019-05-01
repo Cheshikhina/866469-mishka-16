@@ -11,9 +11,22 @@
 .copyright__text {
   font-size: 19px;
   line-height: 34px;
-  margin-left: 39px;
+  margin-left: 37px;
 }
 
 .copyright__link--icon {
-  margin-left: 30px;
+  margin: auto;
+  width: 27px;
+  height: 34px;
+  transform: scale(1.5);
+  margin-left: 29px;
+  margin-top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    line-height: 18px;
+    margin: auto;
+    margin-left: 0;
+  }
 }
