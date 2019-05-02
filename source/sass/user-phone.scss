@@ -23,7 +23,16 @@
   border-bottom: 2px solid hsl(0, 0%, 0%);
   box-shadow: inset 0 -2px 0 0;
   color: hsl(0, 0, 27%);
+
+  &:focus,
+  &:hover,
+  &:active {
+    & + .user-phone--image path {
+      fill: hsl(168, 55%, 60%);
+    }
+  }
 }
+
 
 .user-phone--image {
   display: block;
@@ -32,12 +41,6 @@
   position: absolute;
   right: 8px;
   bottom: 17px;
-
-  &:hover path,
-  &:focus path,
-  &:active path {
-    fill: hsl(168, 55%, 60%);
-  }
 }
 
 @media (min-width: $tablet-width) {

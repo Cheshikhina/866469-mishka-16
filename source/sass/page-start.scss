@@ -33,7 +33,7 @@
       height: 24px;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-position: 100% 100%;
-      background-size: 768px;
+      background-size: contain;
       background-repeat: repeat-x;
       margin-top: 15px;
     }
@@ -54,7 +54,7 @@
     &::after {
       height: 34px;
       background-size: 1150px;
-      margin-top: 15px;
+      margin-top: 13px;
     }
   }
 
