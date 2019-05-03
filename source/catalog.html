@@ -113,8 +113,14 @@
           <a class="objects-container" href="#" aria-label="Перейти к покупке товара">
             <h2 class="visually-hidden">Игрушка Зайчик-попрыгайчик</h2>
             <p class="objects__picture">
-              <img class="objects__picture--image" src="./img/photo-hare-mobile@1x.jpg" width="260" height="195"
-                alt="Фото игрушки Зайчик-попрыгайчик">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
+                <img class="objects__picture--image" src="./img/photo-hare-mobile@1x.jpg"
+                  srcset="./img/photo-hare-mobile@2x.jpg 2x" alt="Фото игрушки Зайчик-попрыгайчик">
+              </picture>
             </p>
             <div class="objects__container">
               <a class="objects__title link" href="#">Зайчик-попрыгайчик</a>
@@ -139,8 +145,14 @@
           <a class="objects-container" href="#" aria-label="Перейти к покупке товара">
             <h2 class="visually-hidden">Корзинка для белья</h2>
             <p class="objects__picture">
-              <img class="objects__picture--image" src="./img/photo-bowl-mobile@1x.jpg" width="260" height="195"
-                alt="Фото корзинки для белья">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="objects__picture--image" src="./img/photo-bowl-mobile@1x.jpg"
+                  srcset="./img/photo-bowl-mobile@2x.jpg 2x" alt="Фото корзинки для белья">
+              </picture>
             </p>
             <div class="objects__container">
               <a class="objects__title link" href="catalog/laundry-basket.html">Корзинка для белья</a>
@@ -165,8 +177,14 @@
           <a class="objects-container" href="#" aria-label="Перейти к покупке товара">
             <h2 class="visually-hidden">Большая корзинка для игрушек</h2>
             <p class="objects__picture">
-              <img class="objects__picture--image" src="./img/photo-toys-mobile@1x.jpg" width="260" height="195"
-                alt="Фото большой корзинки для игрушек">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
+                <img class="objects__picture--image" src="./img/photo-toys-mobile@1x.jpg"
+                  srcset="./img/photo-toys-mobile@2x.jpg 2x" alt="Фото большой корзинки для игрушек">
+              </picture>
             </p>
             <div class="objects__container">
               <a class="objects__title link" href="catalog/basket-for-toys.html">Большая корзинка<br> для игрушек</a>
@@ -214,8 +232,14 @@
     <section class="production">
       <h2 class="production__title production__title--image">Процесс производства</h2>
       <div class="production__wrapper">
-        <video class="production__video" src="#" poster="./img/video-mobile@1x.jpg" width="260" height="150"
-          preload="metadata" aria-label="Видео о процессе производства товаров"></video>
+        <p class="production__picture">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+            <img class="production__video" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x"
+              alt="Видео о процессе производства товаров">
+          </picture>
+        </p>
         <button class="production__video-btn production__video-btn--interaction" type="button">
           <span class="visually-hidden">Запустить видео</span>
           <svg version="1.1" id="Laag_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

@@ -46,10 +46,14 @@
   margin-bottom: 28px;
 }
 
+.production__picture {
+  margin: 0;
+}
+
 .production__video {
   display: block;
   width: 260px;
-  height: 150px;
+  height: 100%;
 }
 
 .production__video-btn {
@@ -105,9 +109,6 @@
 
   .production__video {
     width: 667px;
-    height: 453px;
-    // для размеров
-    background-color: $greyish-brown;
   }
 
   .production__video-btn {
@@ -158,8 +159,6 @@
 
   .production__video {
     width: 682px;
-    height: 455px;
-    margin-bottom: 0;
   }
 
   .production__video-btn {
