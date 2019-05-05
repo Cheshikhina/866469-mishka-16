@@ -1,6 +1,7 @@
 .form-order {
   width: 320px;
-  display: flex;
+  // display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: column;
   box-shadow: 0 5px 10px 0 hsl(180, 1%, 75%);

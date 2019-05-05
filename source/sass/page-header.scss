@@ -9,8 +9,17 @@
   margin: auto;
   width: 86px;
   height: 35px;
-  // для размеров
-  background-color: $greyish-brown;
+}
+
+.page-header__logo--image-link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
