@@ -3,6 +3,10 @@
 .copyright__link {
   display: flex;
 
+  & svg {
+    fill: #63d1bb;
+  }
+
   &:active {
     color: lighten($color, 70%);
   }

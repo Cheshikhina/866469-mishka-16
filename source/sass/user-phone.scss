@@ -27,7 +27,7 @@
   &:focus,
   &:hover,
   &:active {
-    & + .user-phone--image path {
+    & + .user-phone--image svg {
       fill: hsl(168, 55%, 60%);
     }
   }
@@ -41,6 +41,10 @@
   position: absolute;
   right: 8px;
   bottom: 17px;
+
+  & svg {
+    fill: #adadad;
+  }
 }
 
 @media (min-width: $tablet-width) {

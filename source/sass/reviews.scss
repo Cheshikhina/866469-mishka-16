@@ -56,22 +56,26 @@
   border: 1px solid hsl(0, 0%, 93%);
   outline: none;
   cursor: pointer;
+  background-position: 50% 45%;
+  background-repeat: no-repeat;
 
-  &:hover path,
-  &:focus path {
-    fill: $greeny-blue;
-    opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
-  &:active path {
-    fill: $greeny-blue;
+  &:active {
     opacity: 0.3;
   }
 }
 
-// .reviews__btn--prev {}
+.reviews__btn--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
 
-// .reviews__btn--next {}
+.reviews__btn--next {
+  background-image: url("../img/icon-right-arrow.svg");
+}
 
 @media (min-width: $tablet-width) {
   .reviews {

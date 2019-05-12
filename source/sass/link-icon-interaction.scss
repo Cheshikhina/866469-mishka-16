@@ -1,17 +1,11 @@
 .link-icon-interaction {
-  &:hover path,
-  &:hover polygon,
-  &:hover rect,
-  &:focus path,
-  &:focus polygon,
-  &:focus rect {
+  &:hover svg,
+  &:focus svg {
     fill: $greeny-blue;
     opacity: 1;
   }
 
-  &:active path,
-  &:active polygon,
-  &:active rect {
+  &:active svg {
     fill: $greeny-blue;
     opacity: 0.3;
   }

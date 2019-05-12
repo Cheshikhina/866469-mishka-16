@@ -28,7 +28,7 @@
   &:focus,
   &:hover,
   &:active {
-    & + .user-email--image path {
+    & + .user-email--image svg {
       fill: hsl(168, 55%, 60%);
     }
   }
@@ -41,6 +41,10 @@
   position: absolute;
   right: 4px;
   bottom: 18px;
+
+  & svg {
+    fill: #adadad;
+  }
 }
 
 @media (min-width: $tablet-width) {

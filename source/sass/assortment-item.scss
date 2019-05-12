@@ -59,24 +59,28 @@
   margin-right: 27px;
   width: 60px;
   height: 63px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.5;
 }
 
 .assortment-item__link--icon-interior {
   margin-top: 23px;
+  background-image: url("../img/icon-interior.svg");
+}
+
+.assortment-item__link--icon-toy {
+  background-image: url("../img/icon-toy.svg");
 }
 
 .assortment-item__link--icon-image {
-  & path {
-    fill: hsla(172, 77%, 32%, 0.5);
+  &:hover .assortment-item__link--icon,
+  &:focus .assortment-item__link--icon {
+    opacity: 0.7;
   }
 
-  &:hover path,
-  &:focus path {
-    fill: hsla(172, 77%, 32%, 0.7);
-  }
-
-  &:active path {
-    fill: hsla(172, 77%, 32%, 0.3);
+  &:active .assortment-item__link--icon {
+    opacity: 0.3;
   }
 }
 
