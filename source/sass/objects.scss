@@ -49,7 +49,7 @@
 }
 
 .objects__cost {
-  font-size: 15px;
+  font-size: 15.3px;
   line-height: 24px;
   font-weight: 700;
 }
@@ -78,13 +78,18 @@
 
   .objects__container {
     min-width: 334px;
-    padding: 0 24px;
+    padding: 0 25px;
   }
 
   .objects__title {
     font-size: 20px;
     margin-top: 24px;
     margin-bottom: 6px;
+    letter-spacing: 0.2px;
+  }
+
+  .objects__title--cart {
+    margin-bottom: 9px;
   }
 
   .objects__description {
@@ -96,6 +101,7 @@
     margin-left: 5px;
     margin-right: 10px;
     margin-bottom: 26px;
+    margin-top: auto;
   }
 
   .objects__cost {
@@ -126,21 +132,26 @@
     margin: 0;
 
     &:first-child {
-      margin-left: 49px;
+      margin-left: 50px;
     }
 
     &:last-child {
-      margin-right: 49px;
+      margin-right: 50px;
     }
   }
 
   .objects__title {
-    margin-top: 24px;
+    margin-top: 26px;
+    margin-bottom: 5px;
   }
 
   .objects__wrapper {
     margin-left: 0;
     margin-right: 7px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
+  }
+
+  .objects__shopping-cart {
+    right: 0;
   }
 }

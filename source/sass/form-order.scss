@@ -1,6 +1,5 @@
 .form-order {
   width: 320px;
-  // display: flex;
   display: none;
   flex-wrap: wrap;
   flex-direction: column;
@@ -8,6 +7,15 @@
   padding-top: 36px;
   margin: 0 auto;
   margin-bottom: 30px;
+  position: static;
+}
+
+// .form-order--closed {
+//   display: none;
+// }
+
+.form-order--open {
+  display: flex;
 }
 
 .form-order__title {

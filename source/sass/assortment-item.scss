@@ -67,10 +67,12 @@
 .assortment-item__link--icon-interior {
   margin-top: 23px;
   background-image: url("../img/icon-interior.svg");
+  background-position: 10px 0;
 }
 
 .assortment-item__link--icon-toy {
   background-image: url("../img/icon-toy.svg");
+  background-position: 0 2px;
 }
 
 .assortment-item__link--icon-image {
