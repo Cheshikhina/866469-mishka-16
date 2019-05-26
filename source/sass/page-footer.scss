@@ -15,13 +15,6 @@
   display: none;
 }
 
-// .page-footer__logo-image {}
-
-.page-footer__social {
-  display: flex;
-  border-bottom: 1px solid hsl(0, 0, 93%);
-}
-
 .page-footer__copyright {
   margin-top: 19px;
   margin-bottom: 21px;
@@ -40,10 +33,6 @@
     width: 185px;
     margin-top: 51px;
     margin-bottom: 58px;
-  }
-
-  .page-footer__social {
-    border-bottom: none;
   }
 
   .page-footer__copyright {

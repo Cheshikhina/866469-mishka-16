@@ -23,3 +23,15 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--open');
   }
 });
+
+document.querySelectorAll('.objects__shopping-cart').forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var formPopup = document.querySelector('.form-order');
+    var formPopupOpen = document.querySelector('.form-order__wrapper');
+    if (formPopup && formPopupOpen) {
+      formPopup.classList.toggle('form-order--open');
+      formPopupOpen.classList.toggle('form-order__wrapper--open');
+    }
+  })
+})

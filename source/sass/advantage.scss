@@ -2,17 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 251px;
-}
 
-.advantage__description {
-  margin: 0;
-  margin-bottom: 29px;
-  padding-left: 2px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.advantage__icon {
   &::before {
     content: "";
     display: block;
@@ -23,42 +13,59 @@
   }
 }
 
-.advantage__icon--ecologically-friendly {
+.advantage__description {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 2px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.advantage__description--ecologically-friendly,
+.advantage__description--confession {
+  padding-right: 65px;
+}
+
+.advantage__description--profitable {
+  padding-right: 50px;
+}
+
+.advantage--icon-ecologically-friendly {
   &::before {
     background-image: url("../img/icon-feature-flower.svg");
     background-position: 40% 0;
   }
 }
 
-.advantage__icon--profitable {
+.advantage--icon-profitable {
   &::before {
     background-image: url("../img/icon-feature-money.svg");
     background-position: 20% 0;
   }
 }
 
-.advantage__icon--confession {
+.advantage--icon-confession {
   &::before {
     background-image: url("../img/icon-feature-heart.svg");
     background-position: 40% 60%;
   }
 }
 
-.advantage__icon--care {
+.advantage--icon-care {
   &::before {
     background-image: url("../img/icon-feature-ball.svg");
     background-position: 25% 90%;
   }
 }
 
-.advantage__icon--patriotism {
+.advantage--icon-patriotism {
   &::before {
     background-image: url("../img/icon-feature-rocket.svg");
     background-position: 0% 30%;
   }
 }
 
-.advantage__icon--packaging {
+.advantage--icon-packaging {
   &::before {
     background-image: url("../img/icon-feature-gift.svg");
     background-position: 24% 34%;
@@ -91,20 +98,18 @@
       order: 6;
       margin-left: 5.8%;
     }
+
+    margin-left: 3px;
+
+    &::before {
+      margin-bottom: 17px;
+    }
   }
 
   .advantage__description {
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 57px;
-  }
-
-  .advantage__icon {
-    margin-left: 3px;
-
-    &::before {
-      margin-bottom: 17px;
-    }
   }
 }
 

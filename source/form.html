@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="/js/script.js" as="script">
+  <link rel="preload" href="../fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,32 +34,29 @@
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-                <img class="page-header__logo--image page-header__logo--image-link" src="./img/logo-mobile.svg"
+                <img class="page-header__logo-image page-header__logo-image--link" src="./img/logo-mobile.svg"
                   alt="Логотип Мишки">
               </picture>
             </a>
           </li>
           <li class="site-list__item site-list__item--search">
             <a class="link link-icon-interaction" href="result.html">
-              <span class="site-list__item--icon site-list__item--icon-search"
-                aria-label="Поиск по сайту (картинка лупы)">
-                <svg class="site-list__item--icon-search" width="18" height="18">
+              <span class="site-list__item-icon site-list__item-icon-search">
+                <svg class="site-list__item-icon-search" width="18" height="18">
                   <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
               </span>
-              <p class="site-list__item--text-search">Поиск по сайту</p>
+              <p class="site-list__item-text-search">Поиск по сайту</p>
             </a>
           </li>
           <li class="site-list__item site-list__item--cart">
-            <a class="link link-icon-interaction site-list__item--shopping-cart" href="result.html">
-              <span
-                class="site-list__item--icon site-list__item--icon-shopping-cart site-list__item--shopping-cart-result"
-                aria-label="Корзина (картинка корзины)">
-                <svg class="site-list__item--icon-shopping-cart" width="20.294" height="18.849">
+            <a class="link link-icon-interaction site-list__item-shopping-cart" href="result.html">
+              <span class="site-list__item-icon site-list__item-icon-shopping-cart">
+                <svg class="site-list__item-icon-shopping-cart" width="21" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
               </span>
-              <p class="site-list__item--shopping-cart-text">Корзина: пока пуста</p>
+              <p class="site-list__item-shopping-cart-text">Корзина: пока пуста</p>
             </a>
           </li>
         </ul>
@@ -77,7 +78,7 @@
   </header>
 
   <main class="order-main">
-    <div class="page-start page-start__wrapper">
+    <div class="page-start">
       <h1 class="page-start__title">Вязание на заказ</h1>
     </div>
     <section class="order">
@@ -93,12 +94,12 @@
               <legend class="visually-hidden">тип</legend>
               <ul class="type__list">
                 <li class="type__item">
-                  <input class="visually-hidden type__item--interior type__item--radio " type="radio" name="type__item"
+                  <input class="visually-hidden type__item-interior type__item-radio " type="radio" name="type__item"
                     id="mishka-interior" checked>
                   <label for="mishka-interior">Аксессуар для интерьера</label>
                 </li>
                 <li class="type__item">
-                  <input class="visually-hidden type__item--interior type__item--radio" type="radio" name="type__item"
+                  <input class="visually-hidden type__item-interior type__item-radio" type="radio" name="type__item"
                     id="mishka-toys">
                   <label for="mishka-toys">Детская игрушка</label>
                 </li>
@@ -111,32 +112,32 @@
               <legend class="visually-hidden">цвет</legend>
               <ul class="color__list">
                 <li class="color__item">
-                  <input class="visually-hidden color__item--color color__item--checkbox" type="checkbox"
+                  <input class="visually-hidden color__item-color color__item-checkbox" type="checkbox"
                     name="type_of_housing-resort" id="mishka-white" checked>
                   <label for="mishka-white">Белый</label>
                 </li>
                 <li class="color__item">
-                  <input class="visually-hidden color__item--color color__item--checkbox" type="checkbox"
+                  <input class="visually-hidden color__item-color color__item-checkbox" type="checkbox"
                     name="type_of_housing-resort" id="mishka-gray" checked>
                   <label for="mishka-gray">Серый</label>
                 </li>
                 <li class="color__item">
-                  <input class="visually-hidden color__item--color color__item--checkbox" type="checkbox"
+                  <input class="visually-hidden color__item-color color__item-checkbox" type="checkbox"
                     name="type_of_housing-resort" id="mishka-tiffany">
                   <label for="mishka-tiffany">«Тиффани»</label>
                 </li>
                 <li class="color__item">
-                  <input class="visually-hidden color__item--color color__item--checkbox" type="checkbox"
+                  <input class="visually-hidden color__item-color color__item-checkbox" type="checkbox"
                     name="type_of_housing-resort" id="mishka-black">
                   <label for="mishka-black">Черный</label>
                 </li>
                 <li class="color__item">
-                  <input class="visually-hidden color__item--color color__item--checkbox" type="checkbox"
+                  <input class="visually-hidden color__item-color color__item-checkbox" type="checkbox"
                     name="type_of_housing-resort" id="mishka-pink">
                   <label for="mishka-pink">Розовый</label>
                 </li>
                 <li class="color__item">
-                  <input class="visually-hidden color__item--color color__item--checkbox" type="checkbox"
+                  <input class="visually-hidden color__item-color color__item-checkbox" type="checkbox"
                     name="type_of_housing-resort" id="mishka-orange">
                   <label for="mishka-orange">Оранжевый</label>
                 </li>
@@ -148,17 +149,17 @@
             <ul class="user-information__list form-element__content">
               <li class="name user-information__item">
                 <label class="name__label" for="user-name">Имя:</label>
-                <input class="name__input link--input" id="user-name" type="text" name="your-name" value=""
+                <input class="name__input link link--input" id="user-name" type="text" name="your-name" value=""
                   placeholder="Введите ваше имя*" required>
               </li>
               <li class="name user-information__item">
                 <label class="name__label" for="user-surname">Фамилия:</label>
-                <input class="name__input link--input" id="user-surname" type="text" name="your-surname" value=""
+                <input class="name__input link link--input" id="user-surname" type="text" name="your-surname" value=""
                   placeholder="Укажите фамилию*" required>
               </li>
               <li class="name user-information__item">
                 <label class="name__label" for="user-middle-name">Отчество:</label>
-                <input class="name__input link--input" id="user-middle-name" type="text" name="your-middle-name"
+                <input class="name__input link link--input" id="user-middle-name" type="text" name="your-middle-name"
                   value="" placeholder="Отчество, если желаете">
               </li>
             </ul>
@@ -167,10 +168,10 @@
             <h3 class="user-phone__title form-element__title">тел</h3>
             <div class="user-phone__content form-element__content">
               <label class="user-phone__label visually-hidden" for="user-mobile-phone">Телефон</label>
-              <input class="user-phone__input link--input" id="user-mobile-phone" type="text" name="your-mobile-phone"
-                value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              <span class="user-phone--image" aria-label="Картинка телефона">
-                <svg width="24.829px" height="24.333px">
+              <input class="user-phone__input link link--input" id="user-mobile-phone" type="tel"
+                name="your-mobile-phone" value="" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <span class="user-phone__image">
+                <svg width="25" height="25">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </span>
@@ -180,10 +181,10 @@
             <h3 class="user-email__title form-element__title">e-mail</h3>
             <div class="user-email__content form-element__content">
               <label class="user-email__label visually-hidden" for="user-home-email">Электронная почта</label>
-              <input class="user-email__input link--input" id="user-home-email" type="text" name="your-home-email"
+              <input class="user-email__input link--input" id="user-home-email" type="email" name="your-home-email"
                 value="" placeholder="Ваш Email*" required>
-              <span class="user-email--image" aria-label="Картинка почты">
-                <svg width="32px" height="32px">
+              <span class="user-email__image">
+                <svg width="32" height="32">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
                 </svg>
               </span>
@@ -192,18 +193,18 @@
           <li class="user-additionally form-element__item">
             <h3 class="user-additionally__title form-element__title">доп</h3>
             <div class="user-additionally__content form-element__content">
-              <span class="user-additionally__label visually-hidden">Дополнительная
-                информация по заказу</span>
-              <textarea class="user-additionally__input link--texarea" id="user-additionally-info"
+              <label class="user-additionally__label visually-hidden" for="user-additionally-info">Дополнительная
+                информация по заказу</label>
+              <textarea class="user-additionally__input link link--texarea" id="user-additionally-info"
                 name="your-additionally-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </li>
         </ul>
-        <div class="order__form--wrapper">
-          <small class="order__form--legend">
+        <div class="order__form-wrapper">
+          <small class="order__form-legend">
             <sup>*</sup>Поля обязательны для заполнения
           </small>
-          <button class="order__form--button button button--greyish-brown" type="submit">Отправить заказ</button>
+          <button class="order__form-button button button--greyish-brown" type="submit">Отправить заказ</button>
         </div>
       </form>
     </section>
@@ -211,47 +212,45 @@
 
   <footer class="page-footer container">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo link-icon-interaction" href="index.html" area-label="Логотип магазина Мишка">
-        <svg class="page-footer__logo-image" width="101.615px" height="34.056px">
+      <a class="page-footer__logo link-icon-interaction" href="index.html" aria-label="Логотип магазина Мишка">
+        <svg class="page-footer__logo-image" width="102" height="34">
           <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
         </svg>
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram link-icon-interaction"
-              href="https://www.instagram.com/htmlacademy">
-              <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg width="21.769px" height="21.334px">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook link-icon-interaction"
-              href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg width="14.962px" height="27.718px">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter link-icon-interaction" href="https://twitter.com/htmlacademy">
-              <span class="visually-hidden">Мы в Твитере</span>
-              <svg width="23.494px" height="20.168px">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram link-icon-interaction"
+            href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Инстаграме</span>
+            <svg width="22" height="22">
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook link-icon-interaction"
+            href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg width="15" height="28">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter link-icon-interaction" href="https://twitter.com/htmlacademy">
+            <span class="visually-hidden">Мы в Твитере</span>
+            <svg width="24" height="20">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link link-icon-interaction" href="https://htmlacademy.ru/intensive/adaptive">
           <b class="copyright__text">Разработано</b>
           <span class="visually-hidden">Логотип HTML Academy</span>
-          <span class="copyright__link--icon">
-            <svg width="27px" height="34px">
+          <span class="copyright__link-icon">
+            <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#icon-logo-academy"></use>
             </svg>
           </span>
@@ -260,6 +259,8 @@
     </div>
   </footer>
 
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 

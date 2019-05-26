@@ -14,7 +14,7 @@
   margin-bottom: 9%;
 }
 
-.type__item--interior {
+.type__item-interior {
   & + label {
     position: relative;
     display: block;
@@ -32,7 +32,7 @@
   }
 }
 
-.type__item--radio {
+.type__item-radio {
   & + label::before {
     content: "";
     position: absolute;
@@ -72,7 +72,7 @@
     padding-left: 81px;
   }
 
-  .type__item--radio {
+  .type__item-radio {
     & + label::before {
       left: -81px;
       top: -15px;

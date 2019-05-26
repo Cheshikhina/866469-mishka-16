@@ -20,7 +20,7 @@
   }
 }
 
-.color__item--checkbox {
+.color__item-checkbox {
   & + label::before {
     content: "";
     position: absolute;
@@ -53,7 +53,7 @@
   }
 }
 
-.color__item--color {
+.color__item-color {
   & + label {
     position: relative;
     display: block;
@@ -97,7 +97,7 @@
     }
   }
 
-  .color__item--checkbox {
+  .color__item-checkbox {
     & + label::before {
       left: -80px;
       top: -15px;

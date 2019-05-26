@@ -1,6 +1,6 @@
 .form-order-list {
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 26px;
   margin-bottom: 31px;
   padding: 0;
   display: flex;
@@ -28,7 +28,7 @@
 .form-order-list__label {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 16px 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -70,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .form-order-list {
-    margin-top: 26px;
+    margin-top: 24px;
   }
 
   .form-order-list__item {

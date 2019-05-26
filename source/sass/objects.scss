@@ -10,6 +10,7 @@
 .objects__item {
   margin: 0 auto;
   margin-bottom: 30px;
+  max-width: 260px;
 }
 
 .objects__picture {
@@ -18,12 +19,16 @@
   height: 195px;
 }
 
-// .objects__picture--image {}
+.objects__wrapper-main {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .objects__container {
   padding: 0 27px;
   display: flex;
   flex-direction: column;
+  min-width: 260px;
   border: 1px solid  hsl(0, 0, 93%);
 }
 
@@ -59,7 +64,9 @@
   right: 0;
 }
 
-// .objects__shopping-cart--image {}
+.objects__icon-shopping-cart {
+  fill: hsl(0, 0, 80%);
+}
 
 @media (min-width: $tablet-width) {
   .objects {
@@ -68,12 +75,19 @@
 
   .objects__item {
     display: flex;
+    margin: 0 auto;
     margin-bottom: 54px;
+    max-width: 668px;
   }
 
   .objects__picture {
     width: 334px;
     height: 334px;
+  }
+
+  .objects__wrapper-main {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .objects__container {
@@ -99,7 +113,7 @@
 
   .objects__wrapper {
     margin-left: 5px;
-    margin-right: 10px;
+    margin-right: 6px;
     margin-bottom: 26px;
     margin-top: auto;
   }
@@ -113,7 +127,12 @@
   .objects {
     max-width: $desktop-width;
     margin: 0 auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .objects__wrapper-main {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .objects__container {
@@ -129,13 +148,15 @@
 
   .objects__item {
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    max-width: 316px;
 
-    &:first-child {
+    &:nth-child(3n+1) {
       margin-left: 50px;
     }
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 50px;
     }
   }

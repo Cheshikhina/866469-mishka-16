@@ -2,9 +2,6 @@
   display: flex;
   min-height: 176px;
   background-color: hsl(0, 0, 95%);
-}
-
-.page-start__wrapper {
   padding: 0 30px;
 }
 
@@ -20,9 +17,6 @@
     min-height: 225px;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .page-start__wrapper {
     margin-top: -70px;
     padding: 0;
 
@@ -48,7 +42,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-start__wrapper {
+  .page-start {
     margin-top: -60px;
 
     &::after {
