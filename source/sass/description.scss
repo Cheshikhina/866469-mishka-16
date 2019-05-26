@@ -21,9 +21,9 @@
     background-image: -webkit-image-set(url("../img/hero-mobile@1x.webp")1x );
     /* stylelint-enable */
   background-repeat: no-repeat;
-  background-position: 50% 2px;
   background-size: auto 100%;
   background-color: #f9f9f9;
+  margin: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");

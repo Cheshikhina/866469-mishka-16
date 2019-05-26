@@ -150,7 +150,9 @@
     flex-direction: column;
     margin: 0 auto;
     margin-bottom: 57px;
+    width: 316px;
     max-width: 316px;
+    flex-wrap: wrap;
 
     &:nth-child(3n+1) {
       margin-left: 50px;
