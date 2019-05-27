@@ -1,13 +1,5 @@
 .assortment-item {
   font-weight: 700;
-
-  &:hover,
-  &:focus {
-    transform: scaleY(5px);
-    transition-duration: 0.3s;
-    padding-bottom: 5px;
-    outline: none;
-  }
 }
 
 .assortment-item--interior {
@@ -16,6 +8,10 @@
   &:hover,
   &:focus {
     background-color: hsl(168, 60%, 59%);
+    transform: scaleY(5px);
+    transition-duration: 0.3s;
+    padding-bottom: 5px;
+    outline: none;
   }
 
   &:active {
@@ -30,6 +26,10 @@
   &:hover,
   &:focus {
     background-color: hsl(171, 50%, 52%);
+    transform: scaleY(5px);
+    transition-duration: 0.3s;
+    padding-bottom: 5px;
+    outline: none;
   }
 
   &:active {
@@ -104,13 +104,5 @@
 
   .assortment-item__link-icon--interior {
     margin-right: 27px;
-  }
-
-  .assortment-item {
-    &:hover,
-    &:focus {
-      transform: none;
-      padding-bottom: 0;
-    }
   }
 }

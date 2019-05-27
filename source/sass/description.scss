@@ -2,7 +2,7 @@
   margin: 0;
   margin-top: -20px;
   text-align: center;
-  min-height: 373px;
+  min-height: 353px;
 }
 
 .description__text {
@@ -11,7 +11,7 @@
   line-height: 29.5px;
   margin: 0;
   padding: 0 15px;
-  padding-top: 92px;
+  padding-top: 71px;
   letter-spacing: 0.4px;
 }
 
@@ -22,6 +22,7 @@
     /* stylelint-enable */
   background-repeat: no-repeat;
   background-size: auto 100%;
+  background-position-x: center;
   background-color: #f9f9f9;
   margin: 0;
 
