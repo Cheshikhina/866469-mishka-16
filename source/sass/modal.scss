@@ -1,18 +1,21 @@
 .modal {
-  margin-bottom: 33px;
+  margin-bottom: 36px;
+}
+
+.modal__map {
+  height: 457px;
 }
 
 @media (min-width: $tablet-width) {
   .modal {
     width: 100%;
-    margin-bottom: 49px;
+    margin-bottom: 53px;
   }
 
-  .modal--map {
+  .modal__map {
     width: 100%;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .modal {
@@ -24,7 +27,7 @@
     margin-top: -35.2%;
   }
 
-  .modal--map {
+  .modal__map {
     width: 525px;
   }
 }

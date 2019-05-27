@@ -11,8 +11,6 @@
   position: relative;
 }
 
-// .user-phone__label {}
-
 .user-phone__input {
   display: block;
   width: 100%;
@@ -27,14 +25,14 @@
   &:focus,
   &:hover,
   &:active {
-    & + .user-phone--image svg {
+    & + .user-phone__image svg {
       fill: hsl(168, 55%, 60%);
     }
   }
 }
 
 
-.user-phone--image {
+.user-phone__image {
   display: block;
   width: 25px;
   height: 24px;
@@ -68,7 +66,7 @@
     padding-left: 17px;
   }
 
-  .user-phone--image {
+  .user-phone__image {
     right: 13%;
   }
 }
@@ -88,7 +86,7 @@
     width: 85.4%;
   }
 
-  .user-phone--image {
+  .user-phone__image {
     right: 128px;
   }
 }

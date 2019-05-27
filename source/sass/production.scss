@@ -120,10 +120,11 @@
 
   .production__title {
     font-size: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 33px;
     padding-left: 105px;
     padding-top: 9px;
     padding-right: 50px;
+    letter-spacing: 0.1px;
   }
 
   .production__title--image {
@@ -150,7 +151,7 @@
 @media (min-width: $desktop-width) {
   .production {
     max-width: 1049px;
-    margin-bottom: 102px;
+    margin-bottom: 104px;
   }
 
   .production__wrapper {
@@ -188,7 +189,7 @@
     padding-right: 50px;
     margin-left: 65%;
     margin-right: 0;
-    margin-top: -279px;
+    margin-top: -278px;
     margin-bottom: auto;
     align-self: flex-start;
   }
@@ -197,6 +198,7 @@
     width: 230px;
     margin-right: 57px;
     margin-bottom: auto;
-    margin-top: -114px;
+    margin-top: -113px;
+    max-height: 53px;
   }
 }

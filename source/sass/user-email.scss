@@ -6,8 +6,6 @@
   margin-bottom: 8px;
 }
 
-// .user-email__label {}
-
 .user-email__content {
   display: flex;
   position: relative;
@@ -28,13 +26,13 @@
   &:focus,
   &:hover,
   &:active {
-    & + .user-email--image svg {
+    & + .user-email__image svg {
       fill: hsl(168, 55%, 60%);
     }
   }
 }
 
-.user-email--image {
+.user-email__image {
   display: block;
   width: 32px;
   height: 21px;
@@ -73,7 +71,7 @@
     padding-left: 17px;
   }
 
-  .user-email--image {
+  .user-email__image {
     right: 12.2%;
     bottom: 19px;
   }
@@ -95,7 +93,7 @@
     width: 85.4%;
   }
 
-  .user-email--image {
+  .user-email__image {
     right: 124px;
   }
 }

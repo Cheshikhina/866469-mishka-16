@@ -43,7 +43,7 @@
   color: hsl(0, 0, 100%);
 }
 
-.assortment-item__link--text {
+.assortment-item__link-text {
   font-size: 19px;
   margin: 0;
   padding-top: 26px;
@@ -53,7 +53,7 @@
   letter-spacing: normal;
 }
 
-.assortment-item__link--icon {
+.assortment-item__link-icon {
   padding: 0;
   margin: auto;
   margin-right: 27px;
@@ -64,28 +64,30 @@
   opacity: 0.5;
 }
 
-.assortment-item__link--icon-interior {
+.assortment-item__link-icon--interior {
   margin-top: 23px;
   background-image: url("../img/icon-interior.svg");
+  background-position: 10px 0;
 }
 
-.assortment-item__link--icon-toy {
+.assortment-item__link-icon--toy {
   background-image: url("../img/icon-toy.svg");
+  background-position: 0 2px;
 }
 
 .assortment-item__link--icon-image {
-  &:hover .assortment-item__link--icon,
-  &:focus .assortment-item__link--icon {
+  &:hover .assortment-item__link-icon,
+  &:focus .assortment-item__link-icon {
     opacity: 0.7;
   }
 
-  &:active .assortment-item__link--icon {
+  &:active .assortment-item__link-icon {
     opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .assortment-item__link--text {
+  .assortment-item__link-text {
     min-width: 240px;
     font-size: 20px;
     line-height: 30px;
@@ -95,12 +97,12 @@
     padding-bottom: 33px;
   }
 
-  .assortment-item__link--icon {
+  .assortment-item__link-icon {
     margin: auto;
     margin-right: 35px;
   }
 
-  .assortment-item__link--icon-interior {
+  .assortment-item__link-icon--interior {
     margin-right: 27px;
   }
 

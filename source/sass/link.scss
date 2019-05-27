@@ -12,10 +12,12 @@
 .link--shadow {
   &:hover,
   &:focus {
+    color: rgb(0, 0, 0);
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
+    color: rgb(0, 0, 0);
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
@@ -24,7 +26,8 @@
   &:hover,
   &:focus,
   &:active {
-    border-bottom: 2px solid hsl(168, 55%, 60%);
+    color: rgb(0, 0, 0);
+    border-bottom: 4px solid hsl(168, 55%, 60%);
     box-shadow: none;
   }
 }
@@ -33,6 +36,7 @@
   &:hover,
   &:focus,
   &:active {
+    color: rgb(0, 0, 0);
     border: 2px solid hsl(168, 55%, 60%);
     box-shadow: none;
   }

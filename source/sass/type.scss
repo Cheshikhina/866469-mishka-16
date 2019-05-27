@@ -14,7 +14,7 @@
   margin-bottom: 9%;
 }
 
-.type__item--interior {
+.type__item-interior {
   & + label {
     position: relative;
     display: block;
@@ -32,14 +32,14 @@
   }
 }
 
-.type__item--radio {
+.type__item-radio {
   & + label::before {
     content: "";
     position: absolute;
     left: -62px;
     top: -9px;
     width: 40px;
-    height: 40px;
+    height: 39px;
     border: 2px solid hsl(0, 0%, 27%);
     border-radius: 50%;
   }
@@ -67,12 +67,12 @@
 
 @media (min-width: $tablet-width) {
   .type__item {
-    margin-bottom: 59px;
+    margin-bottom: 57px;
     font-size: 19px;
     padding-left: 81px;
   }
 
-  .type__item--radio {
+  .type__item-radio {
     & + label::before {
       left: -81px;
       top: -15px;
