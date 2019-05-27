@@ -8,10 +8,6 @@
   &:hover,
   &:focus {
     background-color: hsl(168, 60%, 59%);
-    transform: scaleY(5px);
-    transition-duration: 0.3s;
-    padding-bottom: 5px;
-    outline: none;
   }
 
   &:active {
@@ -26,10 +22,6 @@
   &:hover,
   &:focus {
     background-color: hsl(171, 50%, 52%);
-    transform: scaleY(5px);
-    transition-duration: 0.3s;
-    padding-bottom: 5px;
-    outline: none;
   }
 
   &:active {
@@ -104,5 +96,16 @@
 
   .assortment-item__link-icon--interior {
     margin-right: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .assortment-item {
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+      transition-duration: 0.3s;
+      outline: none;
+    }
   }
 }

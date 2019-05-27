@@ -152,10 +152,16 @@
   .production {
     max-width: 1049px;
     margin-bottom: 104px;
+    flex-direction: column;
+    padding-left: 682px;
+    position: relative;
   }
 
   .production__wrapper {
     margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .production__video {
@@ -187,18 +193,15 @@
     max-width: 365px;
     padding-left: 77px;
     padding-right: 50px;
-    margin-left: 65%;
-    margin-right: 0;
-    margin-top: -278px;
-    margin-bottom: auto;
-    align-self: flex-start;
+    margin: auto;
+    margin-top: 33px;
+    margin-bottom: 45px;
   }
 
   .production__order {
     width: 230px;
     margin-right: 57px;
     margin-bottom: 60px;
-    margin-top: -113px;
     min-height: 53px;
   }
 }
