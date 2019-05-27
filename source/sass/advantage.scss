@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 251px;
+  align-self: flex-start;
 
   &::before {
     content: "";
@@ -75,31 +76,38 @@
 @media (min-width: $tablet-width) {
   .advantage {
     max-width: 295px;
+    margin-left: 3px;
+
+    &:nth-child(1) {
+      order: -6;
+    }
 
     &:nth-child(2) {
-      order: 3;
+      order: -4;
     }
 
     &:nth-child(3) {
-      order: 5;
+      order: -2;
     }
 
     &:nth-child(4) {
-      order: 2;
+      order: -5;
       margin-left: 5.8%;
     }
 
     &:nth-child(5) {
-      order: 4;
+      order: -3;
       margin-left: 5.8%;
     }
 
     &:nth-child(6) {
-      order: 6;
+      order: -1;
       margin-left: 5.8%;
     }
 
-    margin-left: 3px;
+    &:nth-child(2n+6) {
+      margin-left: 5.8%;
+    }
 
     &::before {
       margin-bottom: 17px;
@@ -116,17 +124,18 @@
 @media (min-width: $desktop-width) {
   .advantage {
     &:nth-child(4) {
-      order: 2;
       margin-left: 6.6%;
     }
 
     &:nth-child(5) {
-      order: 4;
       margin-left: 6.6%;
     }
 
     &:nth-child(6) {
-      order: 6;
+      margin-left: 6.6%;
+    }
+
+    &:nth-child(2n+6) {
       margin-left: 6.6%;
     }
   }

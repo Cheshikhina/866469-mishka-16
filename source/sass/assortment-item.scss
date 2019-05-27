@@ -1,13 +1,5 @@
 .assortment-item {
   font-weight: 700;
-
-  &:hover,
-  &:focus {
-    transform: scaleY(5px);
-    transition-duration: 0.3s;
-    padding-bottom: 5px;
-    outline: none;
-  }
 }
 
 .assortment-item--interior {
@@ -105,12 +97,15 @@
   .assortment-item__link-icon--interior {
     margin-right: 27px;
   }
+}
 
+@media (min-width: $desktop-width) {
   .assortment-item {
     &:hover,
     &:focus {
-      transform: none;
-      padding-bottom: 0;
+      transform: translateY(-5px);
+      transition-duration: 0.3s;
+      outline: none;
     }
   }
 }

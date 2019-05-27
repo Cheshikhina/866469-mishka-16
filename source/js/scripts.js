@@ -34,4 +34,16 @@ document.querySelectorAll('.objects__shopping-cart').forEach(function (item) {
       formPopupOpen.classList.toggle('form-order__wrapper--open');
     }
   })
-})
+});
+
+document.querySelectorAll('.product-of-the-week__order').forEach(function (item) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var formOrder = document.querySelector('.form-order');
+    var formOrderOpen = document.querySelector('.form-order__wrapper');
+    if (formOrder && formOrderOpen) {
+      formOrder.classList.toggle('form-order--open');
+      formOrderOpen.classList.toggle('form-order__wrapper--open');
+    }
+  })
+});
